@@ -3,4 +3,5 @@
 
 #npm test
 echo "Pre-commit hook is running"
-npm run build
+#npm run build
+npm run prettier
