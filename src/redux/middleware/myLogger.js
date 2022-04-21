@@ -1,8 +1,8 @@
 const myloggerMiddleware = function(store){
-    return function(nextAction){
+    return function(next){
         return function (action) {
-            console.log("MyLogger:: state:", store.getState(), ", nextAction:", nextAction, ", action:", action);
-            nextAction(action);
+            console.log("MyLogger:: state:", store.getState(), ", next:", next, ", action:", action);
+            next(action);
         }
     }
 }
